@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Welcome to Astro.">
   <main>
     <header
-      class="py-4 px-10 flex items-center fixed to-0 w-full justify-between"
+      class="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white"
     >
       <div class="flex flex-grow basis-0">
         <svg
@@ -42,6 +42,14 @@ import Layout from "../layouts/Layout.astro";
         </ul>
       </nav>
     </header>
+	<section class="bg-black h-screen w-screen text-center relative overflow-hidden">
+		<h2>Disfrute de Tesla.</h2>
+		<p>Programe una prueba de conducción hoy mismo</p>
+	<a href="#">Prueba de conducción</a>
+<div class="absolute top-0 bottom-0">
+	<video autoplay muted  loop src="/video.webm"></video>
+</div>
+	</section>
 	
   </main>
 </Layout>
