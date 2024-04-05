@@ -1,25 +1,41 @@
 ---
+import Accessories from "../components/Accessories.astro";
+import HeroSection from "../components/HeroSection.astro";
 import LandingHeader from "../components/LandingHeader.astro";
-import Logo from "../components/Logo.astro";
+import ModelS from "../components/ModelS.astro";
+import ModelThree from "../components/ModelThree.astro";
+import ModelX from "../components/ModelX.astro";
+import ModelY from "../components/ModelY.astro";
+import PowerWall from "../components/PowerWall.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Tesla">
-  <main>
-    <LandingHeader />
-    <section
-      class="bg-black h-screen w-screen text-center  overflow-hidden relative"
-    >
-      <header class="z-30 relative">
-        <h2 class="text-white pt-40 text-5xl font-medium">Disfrute de Tesla</h2>
-        <p class="text-white text-sm ">Programe una prueba de conducción hoy mismo</p>
-      </header>
-      <footer class="z-30 relative flex flex-grow justify-end flex-col">
-        <a href="#">Prueba de conducción</a>
-      </footer>
-      <div class="absolute top-0 bottom-0 h-full z-10">
-        <video class="object-center object-cover h-full" autoplay muted loop src="/video.webm"></video>
-      </div>
-    </section>
+<Layout title="Tesla - El coche de tus sueños (y de Elon Musk)">
+  <LandingHeader />
+
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
+  >
+    <div class="snap-center">
+      <HeroSection />
+    </div>
+    <div class="snap-center">
+      <ModelY />
+    </div>
+    <div class="snap-center">
+      <ModelThree />
+    </div>
+    <div class="snap-center">
+      <ModelS />
+    </div>
+    <div class="snap-center">
+      <ModelX />
+    </div>
+    <div class="snap-center">
+      <PowerWall />
+    </div>
+    <div class="snap-center">
+      <Accessories />
+    </div>
   </main>
 </Layout>
